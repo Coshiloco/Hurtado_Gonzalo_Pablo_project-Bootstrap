@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio</title>
+    <link rel="stylesheet" href="../css/bootstrap-responsive.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav>
+        <a href="../index.html">
+          <img
+            id="logo-img"
+            height="60px"
+            src="../images/logo.png"
+            alt="logo-img"
+          />
+        </a>
+        <ul>
+          <li class="nav-item">
+            <a class="element-list" href="./home.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="element-list" href="./about.html">About</a>
+            <ul class="dropdown-content">
+              <li><a href="./photoGallery.html">Photo Gallery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="element-list" href="./menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="element-list" href="./store.html">Store</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="element-list" href="./events.html">Events</a>
+            <ul class="dropdown-content">
+              <li><a href="./news.html">News</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="element-list" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="contact-overlay">
+        <h1>Contact Us:</h1>
+        <p>
+          Have a question or comment for us? Submit down below
+          <br />
+          and we'll get back to you as soon as we can.
+        </p>
+        <form
+          action="http://vip.groupehn.com:20003/html/infospost.php"
+          method="post"
+        >
+          <div id="form-box">
+            <p>
+              FirstName
+              <input
+                class="form-input"
+                id="firstname"
+                type="text"
+                name="firstname"
+                placeholder="First Name and Last Name"
+              />
+            </p>
+            <p>
+              LastName
+              <input
+                class="form-input"
+                id="lastname"
+                type="text"
+                name="lastname"
+                placeholder="exampleemail@email.com"
+              />
+            </p>
+            <p>
+              Email
+              <input
+                class="form-input"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="exampleemail@email.com"
+              />
+            </p>
+            <p>
+              Questions and Comments
+              <textarea
+                name="request"
+                id="request"
+                placeholder="Leave your comments here!"
+                cols="66"
+                rows="10"
+              >
+              </textarea>
+            </p>
+            <p>
+              Select your country
+              <select title="countries" name="country" id="country">
+                <option value="us">United States</option>
+                <option value="ca">Canada</option>
+                <option value="mx">Mexico</option>
+                <option value="uk">United Kingdom</option>
+                <option value="fr">France</option>
+                <option value="es">Spain</option>
+              </select>
+            </p>
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>copyright 2023</footer>
+  </body>
+</html>
